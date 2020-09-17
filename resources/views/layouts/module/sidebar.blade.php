@@ -21,7 +21,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item has-treeview menu-open">
-                    <a href="{{route('home')}}" class="nav-link active">
+                    <a href="{{route('home')}}" class="nav-link {{request()->is('home') ? 'active' : ''}}">
                         <i class="nav-icon fa fa-dashboard"></i>
                         <p>
                             Dashboard
@@ -30,7 +30,7 @@
                 </li>
                 @role('admin')
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link {{Request::is('users*') || Request::is('role*') ? 'active' : ''}}">
                         <i class="nav-icon fa fa-users"></i>
                         <p>
                             Manajemen Users
@@ -39,19 +39,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{route('users.index')}}" class="nav-link">
+                            <a href="{{route('users.index')}}" class="nav-link {{Request::route()->getName() =='users.index' ? 'active' : ''}}">
                                 <i class="fa fa-circle-o nav-icon"></i>
                                 <p>Users</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('role.index')}}" class="nav-link">
+                            <a href="{{route('role.index')}}" class="nav-link {{Request::route()->getName() == 'role.index' ? 'active' : ''}}">
                                 <i class="fa fa-circle-o nav-icon"></i>
                                 <p>Role</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('users.roles_permission')}}" class="nav-link">
+                            <a href="{{route('users.roles_permission')}}" class="nav-link {{Request::route()->getName() == 'users.roles_permission' ? 'active' : ''}}">
                                 <i class="fa fa-circle-o nav-icon"></i>
                                 <p>Role Permission</p>
                             </a>
@@ -61,7 +61,7 @@
                 @endrole
                 @if(Auth::user()->can('manage products'))
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link {{Request::is('product*') || Request::is('category*') ? 'active' : ''}}">
                         <i class="nav-icon fa fa-server"></i>
                         <p>
                             Manajemen Produk
@@ -70,13 +70,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('category.index') }}" class="nav-link">
+                            <a href="{{ route('category.index') }}" class="nav-link {{Request::route()->getName() == 'category.index' ? 'active' : ''}}">
                                 <i class="fa fa-circle-o nav-icon"></i>
                                 <p>Kategori</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('product.index')}}" class="nav-link">
+                            <a href="{{route('product.index')}}" class="nav-link {{Request::route()->getName() == 'product.index' ? 'active' : ''}}">
                                 <i class="fa fa-circle-o nav-icon"></i>
                                 <p>Produk</p>
                             </a>
@@ -86,7 +86,7 @@
                 @endif
                 @role('kasir')
                 <li class="nav-item">
-                    <a href="{{route('order.transaksi')}}" class="nav-link">
+                    <a href="{{route('order.transaksi')}}" class="nav-link {{Request::route()->getName() == 'order.transaksi' ? 'active' : ''}}">
                         <i class="nav-icon fa fa-shopping-cart"></i>
                             <p>
                                 Transaksi
@@ -95,7 +95,7 @@
                 </li>
                 @endrole
                 <li class="nav-item has-treeview">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link {{Request::is('order*') ? 'active' : ''}}">
                         <i class="nav-icon fa fa-shopping-bag"></i>
                         <p>Manajemen Order
                         <i class="right fa fa-angle-left"></i>
@@ -103,7 +103,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{route('order.index')}}" class="nav-link">
+                            <a href="{{route('order.index')}}" class="nav-link {{Request::route()->getName() == 'order.index' ? 'active' : ''}}">
                                 <i class="fa fa-circle-o nav-icon"></i>
                                 <p>Order</p>
                             </a>

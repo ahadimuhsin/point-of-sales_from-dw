@@ -20,23 +20,31 @@
                     </div>
                 @endif
 
-                <div class="form-group has-feedback">
+                <div class="input-group has-feedback mb-3">
                     <input type="email" required name="email"
                     class="form-control {{$errors->has('email') ? 'is-invalid' : ''}}"
                     placeholder="{{__('Email Address')}}"
-                    value="{{old('email')}}">
-                    <span class="fa fa-envelope form-control-feedback">{{$errors->first('email')}}</span>
+                    value="{{old('email')}}" style="border-right-color: white">
+                    <div class="input-group-append">
+                        <div class="input-group-text" style="background-color: white">
+                            <span class="fa fa-envelope form-control-feedback">{{$errors->first('email')}}</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group has-feedback">
+                <div class="input-group has-feedback mb-3">
                     <input type="password" required name="password"
                            class="form-control {{$errors->has('password') ? 'is-invalid' : ''}}"
                            placeholder="{{__('Password')}}"
-                           value="{{old('password')}}">
-                    <span class="fa fa-lock form-control-feedback">{{$errors->first('password')}}</span>
+                           value="{{old('password')}}" style="border-right-color: white">
+                    <div class="input-group-append">
+                        <div class="input-group-text" style="background-color: white">
+                            <span class="fa fa-lock form-control-feedback">{{$errors->first('password')}}</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row">
+                <div class="row mt-3">
                     <div class="col-8">
                         <div class="checkbox icheck">
                             <label>
