@@ -194,7 +194,7 @@ class ProductController extends Controller
         //jika photo ada
         if(!empty($product->photo)){
             //hapus file
-            File::delete(public_path('uploads/product'.$products->photo));
+            File::delete(public_path('uploads/product'.$product->photo));
         }
 
         DB::select(DB::raw("ALTER TABLE products AUTO_INCREMENT = 1"));

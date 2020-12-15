@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d48db7f-4721-4f8e-8ce7-31f4cb9c9f38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/module/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/module/sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +161,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../book-store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xampp7.0.30/htdocs/tanker" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -217,7 +215,15 @@
       <workItem from="1599483722077" duration="3154000" />
       <workItem from="1599529813939" duration="16440000" />
       <workItem from="1599614710267" duration="4287000" />
-      <workItem from="1600322237043" duration="1579000" />
+      <workItem from="1600322237043" duration="2310000" />
+      <workItem from="1600326253181" duration="1203000" />
+      <workItem from="1600397176145" duration="598000" />
+      <workItem from="1600403510431" duration="6000" />
+      <workItem from="1600833823415" duration="166000" />
+      <workItem from="1600910693573" duration="762000" />
+      <workItem from="1601016092428" duration="1161000" />
+      <workItem from="1601033313293" duration="36000" />
+      <workItem from="1601284373595" duration="1094000" />
     </task>
     <servers />
   </component>
@@ -245,10 +251,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="116" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.720@0.0.1280.720" timestamp="1598349156882" />
-    <state x="722" y="165" key="FileChooserDialogImpl" timestamp="1599619753335">
+    <state x="722" y="165" key="FileChooserDialogImpl" timestamp="1600911453474">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="722" y="165" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1599619753335" />
+    <state x="722" y="165" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1600911453474" />
     <state width="676" height="165" key="GridCell.Tab.0.bottom" timestamp="1599041119526">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

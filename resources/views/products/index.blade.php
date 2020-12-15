@@ -96,7 +96,7 @@
                                     </table>
                                     <div class="row float-right">
                                         <div class="col">
-                                            {{$products->links()}}
+                                            {{$products->appends(Request::all())->links()}}
                                         </div>
                                     </div>
                                 </div>

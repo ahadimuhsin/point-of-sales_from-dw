@@ -106,6 +106,13 @@
                                             </tr>
                                         @endforelse
                                         </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="10">
+                                                    {{ $categories->appends(Request::all())->links() }}
+                                                </td>
+                                            </tr>
+                                        </tfoot>
                                     </table>
                                 </div>
                             </div>
